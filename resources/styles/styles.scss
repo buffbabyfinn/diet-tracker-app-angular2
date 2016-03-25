@@ -1,14 +1,29 @@
+$bodyBackground : #6AC4BD;
+$headerBackground : #D95191;
+$textColor : #131C74;
+$mealListColor: black;
+$selectedColor: #7EC610;
+
+body {
+  background-color: $bodyBackground;
+  color: $textColor;
+}
+
+.selected {
+  color: $selectedColor;
+}
+
 .heading {
-  background-color: #FFA260;
-  color: #131C74;
+  background-color: $headerBackground;
   text-align: center;
+  font-size: 4em;
   padding-bottom: 15px;
 }
 
 .hidden{
-  color: #3B3178;
+
 }
 
-.selected {
-  color: #1D7CF2;
+.mealList{
+  color: $mealListColor;
 }

@@ -11,6 +11,11 @@ import { MealDetailComponent } from './meal-detail-view.component';
   outputs: ['onMealSelect'],
   directives: [MealComponent, MealEditComponent, MealNewComponent, MealDetailComponent],
   template: `
+    <new-meal
+    (onSubmitNewMeal)="createMeal($event)">
+    </new-meal><br>
+
+    <h2>Your Meal List:</h2>
     <meal-display
     *ngFor="#currentMeal of mealList"
     (click)="mealClicked(currentMeal)"
@@ -30,9 +35,7 @@ import { MealDetailComponent } from './meal-detail-view.component';
     [class.hidden]="!selectedMeal">
     </edit-meal-details>
 
-    <new-meal
-    (onSubmitNewMeal)="createMeal($event)">
-    <new-meal>
+    <button
   `
 })
 

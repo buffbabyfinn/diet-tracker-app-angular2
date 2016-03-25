@@ -6,6 +6,7 @@ import { MealComponent } from './meal.component';
   selector: 'meal-display-detail',
   inputs: ['meal'],
   template: `
+    <h3>Detail/Edit Meal:</h3>
     <h5>{{ meal.details }}</h5>
     <h4>{{ meal.calories }}</h4>
   `
