@@ -4,13 +4,28 @@ $textColor : #131C74;
 $mealListColor: black;
 $selectedColor: #7EC610;
 
-body {
-  background-color: $bodyBackground;
-  color: $textColor;
-}
-
 .selected {
   color: $selectedColor;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul .mealDisplay {
+  display: block;
+  max-width: 400px;
+}
+
+.mealDetails {
+  float: right;
+  padding-left: 35px;
+  line-break: strict;
+}
+
+.mealEdit {
+  float: right;
+  line-break: strict;
 }
 
 .heading {
@@ -18,12 +33,15 @@ body {
   text-align: center;
   font-size: 4em;
   padding-bottom: 15px;
-}
-
-.hidden{
-  
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .mealList{
   color: $mealListColor;
+}
+
+body {
+  background-color: $bodyBackground;
+  color: $textColor;
 }

@@ -18,7 +18,7 @@ import { HealthyPipe } from './healthy.pipe';
     </new-meal><br>
 
     <h2>Your Meal List:</h2>
-    
+
     <select (change)="onChange($event.target.value)">
       <option value="all" selected="selected">Show All Foods</option>
       <option value="healthy">Show Healthy Foods</option>
@@ -44,7 +44,6 @@ import { HealthyPipe } from './healthy.pipe';
     [class.hidden]="!selectedMeal">
     </edit-meal-details>
 
-    <button
   `
 })
 
