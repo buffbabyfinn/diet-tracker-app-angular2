@@ -1,0 +1,22 @@
+{
+  "name": "diet-tracker-app",
+  "description": "",
+  "main": "",
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "https://github.com/buffbabyfinn/diet-tracker-app-angular2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "package": "^0.1.2",
+    "bootstrap": "^3.3.6"
+  },
+  "authors": [
+    "Megan Fayer"
+  ]
+}
