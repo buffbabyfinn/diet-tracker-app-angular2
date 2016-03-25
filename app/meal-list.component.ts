@@ -16,6 +16,11 @@ import { MealDetailComponent } from './meal-detail-view.component';
     </new-meal><br>
 
     <h2>Your Meal List:</h2>
+    <select>
+      <option value="all" selected="selected">Show All Foods</option>
+      <option value="healthy">Show Healthy Foods</option>
+      <option value="unhealthy">Show Unhealthy Foods</option>
+    </select>
     <meal-display
     *ngFor="#currentMeal of mealList"
     (click)="mealClicked(currentMeal)"
@@ -53,7 +58,12 @@ export class MealListComponent {
   }
   createMeal(values) {
     var meal = new Meal(values[0], values[1], values[2], this.mealList.length);
+      console.log(meal);
+      if(meal.calories >= 300) {
+        meal.healthy = false;
+      } else {
+        meal.healthy = true;
+      }
     this.mealList.push(meal);
   }
-
 }

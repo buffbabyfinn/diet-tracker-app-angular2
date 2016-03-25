@@ -26,6 +26,8 @@ export class AppComponent {
       new Meal("Hamburger", "No cheese, no soda!", 354, 0),
       new Meal("Fries", "Only ate half.", 365, 1)
     ];
+    this.meals[0].healthy = false;
+    this.meals[1].healthy = false;
   }
   mealWasSelected(clickedMeal: Meal): void {
   }
